@@ -83,15 +83,7 @@ import java.util.Scanner;
    {this.FlightCompany = FlightCompany;
    }
 
-//    public FlightBooking(String passengerFullName,LocalDate depart,LocalDate returnDate,int childPassengers, int adultPassengers)
-//    {
-//     this.PassengerFullName = passengerFullName;
-//     setDepartureDate(depart);
-//     setReturnDate(returnDate);
-//     this.ChildPassengers = childPassengers;
-//     this.AdultPassengers = adultPassengers;
-//     setTotalPassengers(childPassengers,adultPassengers);
-//     }
+
 
 
 
@@ -256,9 +248,6 @@ public FlightBooking(String a, LocalDate depart, LocalDate returnDate, int w, in
 
 
 
-
-
-
 //4
 
 public LocalDate departureDate;
@@ -303,44 +292,7 @@ public LocalDate departureDate;
 
 
 
-//5
 
-//  private double DepartingTicketPrice;
-//  private double ReturnTicketPrice;
-
-//  public void setTotalPassengers(int totalPassengers, int TotalPassengers) 
-//  {
-//   this.TotalPassengers = ChildPassengers + AdultPassengers;
-//  }
-
-//  public void setTotalTicketPrice() 
-//  {
-//   this.TotalTicketPrice = Math.abs((((2 * ((300 + (0.1 * 300)) + (0.05 * 300))) + (5 * ((300 + (0.1 * 300)) + (0.05 * 300)))) + 250) * 2);
-//  }
-//  int departingTicketPrice;int returnTicketPrice;
-//  public void setDepartingTicketPrice(int child, int adult) 
-//  {
-//   this.DepartingTicketPrice = departingTicketPrice;
-//  }
-//  public void setReturnTicketPrice() 
-//  {
-//   this.ReturnTicketPrice = returnTicketPrice;
-//  }
-
-
-
-//  public double getDepartingTicketPrice() {
-//     return DepartingTicketPrice;
-// }
-
-// public double getReturnTicketPrice() {
-//     return ReturnTicketPrice;
-// }
-
-// public double getTotalTicketPrice() {
-//     this.TotalTicketPrice = DepartingTicketPrice + ReturnTicketPrice;
-//     return TotalTicketPrice;
-// }
 
 
 
@@ -466,29 +418,29 @@ public void setConfirmationMessage(String confirmationMessage) {
 }
 
 
-// public void setTotalTicketPrice() {
+public void setTotalTicketPrice() {
 
-//     this.TotalTicketPrice = Math.abs((((2 * ((300 + (0.1 * 300)) + (0.05 * 300))) + (5 * ((300 + (0.1 * 300)) + (0.05 * 300)))) + 250) * 2);
-// }
-// public double getTotalTicketPrice(){
-//     return TotalTicketPrice;
-// }
+    this.TotalTicketPrice = Math.abs((((2 * ((300 + (0.1 * 300)) + (0.05 * 300))) + (5 * ((300 + (0.1 * 300)) + (0.05 * 300)))) + 250) * 2);
+}
+public double getTotalTicketPrice(){
+    return TotalTicketPrice;
+}
 
-// private double departingTicketPrice;
-// private double returnTicketPrice;
-// public void setDepartingTicketPrice(int child , int adult){
-//     this.departingTicketPrice= departingTicketPrice;
-// }
-// public double getDepartingTicketPrice(){
-//     return departingTicketPrice;
-// }
+private double departingTicketPrice;
+private double returnTicketPrice;
+public void setDepartingTicketPrice(int child , int adult){
+    this.departingTicketPrice= departingTicketPrice;
+}
+public double getDepartingTicketPrice(){
+    return departingTicketPrice;
+}
 
 
-// public void setReturnTicketPrice()
-// .{
-//     this.returnTicketPrice=returnTicketPrice;
-// }
-// public double getReturnTicketPrice(){
-//     return returnTicketPrice;
-// }
+public void setReturnTicketPrice()
+{
+    this.returnTicketPrice=returnTicketPrice;
+}
+public double getReturnTicketPrice(){
+    return returnTicketPrice;
+}
 }

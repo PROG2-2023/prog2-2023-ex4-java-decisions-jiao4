@@ -466,29 +466,29 @@ public void setConfirmationMessage(String confirmationMessage) {
 }
 
 
-public void setTotalTicketPrice() {
+// public void setTotalTicketPrice() {
 
-    this.TotalTicketPrice = Math.abs((((2 * ((300 + (0.1 * 300)) + (0.05 * 300))) + (5 * ((300 + (0.1 * 300)) + (0.05 * 300)))) + 250) * 2);
-}
-public double getTotalTicketPrice(){
-    return TotalTicketPrice;
-}
+//     this.TotalTicketPrice = Math.abs((((2 * ((300 + (0.1 * 300)) + (0.05 * 300))) + (5 * ((300 + (0.1 * 300)) + (0.05 * 300)))) + 250) * 2);
+// }
+// public double getTotalTicketPrice(){
+//     return TotalTicketPrice;
+// }
 
-private double departingTicketPrice;
-private double returnTicketPrice;
-public void setDepartingTicketPrice(int child , int adult){
-    this.departingTicketPrice=departingTicketPrice;
-}
-public double getDepartingTicketPrice(){
-    return departingTicketPrice;
-}
+// private double departingTicketPrice;
+// private double returnTicketPrice;
+// public void setDepartingTicketPrice(int child , int adult){
+//     this.departingTicketPrice= departingTicketPrice;
+// }
+// public double getDepartingTicketPrice(){
+//     return departingTicketPrice;
+// }
 
 
-public void setReturnTicketPrice()
-.{
-    this.returnTicketPrice=returnTicketPrice;
-}
-public double getReturnTicketPrice(){
-    return returnTicketPrice;
-}
+// public void setReturnTicketPrice()
+// .{
+//     this.returnTicketPrice=returnTicketPrice;
+// }
+// public double getReturnTicketPrice(){
+//     return returnTicketPrice;
+// }
 }

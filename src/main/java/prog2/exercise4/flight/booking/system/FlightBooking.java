@@ -3,6 +3,8 @@ import java.time.LocalDate;
 import java.util.Date;
 import java.util.Random;
 
+
+
   
   public class FlightBooking 
   {
@@ -24,13 +26,13 @@ import java.util.Random;
 //    public DestinationAirport DestinationAirport;
 
    private  BookingClass bookingClass;
-   public enum BookingClass
+   enum BookingClass
    {
    FIRST,BUSINESS,ECONOMY;
    }
 
    private TripType tripType;
-   public enum TripType
+   enum TripType
    {
     ONE_WAY, RETURN;
    }
@@ -40,17 +42,17 @@ import java.util.Random;
 
 
 
-   public enum TripSource 
+   enum TripSource 
    {
     NANJING, BEIJING, SHANGHAI, OULU, HELSINKI,PARIS;
    }
-   public enum Airport{
+   enum Airport{
     NANJING_LUKOU_INTERNATIONAL_AIRPORT, BEIJING_CAPITAL_INTERNATIONAL_AIRPORT,
     SHANGHAI_PUDON_INTERNATIONAL_AIRPORT, OULU_AIRPORT,HELSINKI_AIRPORT,
     PARIS_CHARLES_DE_GAULLE_AIRPORT
     }
 
-   public enum TripDestination 
+   enum TripDestination 
    {
     NANJING, BEIJING, SHANGHAI, OULU, HELSINKI,PARIS;
    }
@@ -484,7 +486,7 @@ public double getTotalTicketPrice(){
 private double departingTicketPrice;
 private double returnTicketPrice;
 public void setDepartingTicketPrice(int child , int adult){
-    this.departingTicketPrice= departingTicketPrice;
+    this.departingTicketPrice= departingTicketPrice+0;
 }
 public double getDepartingTicketPrice(){
     return departingTicketPrice;
@@ -493,9 +495,10 @@ public double getDepartingTicketPrice(){
 
 public void setReturnTicketPrice()
 {
-    this.returnTicketPrice=returnTicketPrice;
+    this.returnTicketPrice=returnTicketPrice+0;
 }
-public double getReturnTicketPrice(){
+public double getReturnTicketPrice()
+{
     return returnTicketPrice;
 }
 }

@@ -1,8 +1,8 @@
 package prog2.exercise4.flight.booking.system;
 import java.time.LocalDate;
-import java.time.Period;
+
 import java.util.Random;
-import java.util.Scanner;
+
 
 
   
@@ -83,7 +83,15 @@ import java.util.Scanner;
    {this.FlightCompany = FlightCompany;
    }
 
-
+//    public FlightBooking(String passengerFullName,LocalDate depart,LocalDate returnDate,int childPassengers, int adultPassengers)
+//    {
+//     this.PassengerFullName = passengerFullName;
+//     setDepartureDate(depart);
+//     setReturnDate(returnDate);
+//     this.ChildPassengers = childPassengers;
+//     this.AdultPassengers = adultPassengers;
+//     setTotalPassengers(childPassengers,adultPassengers);
+//     }
 
 
 
@@ -248,6 +256,9 @@ public FlightBooking(String a, LocalDate depart, LocalDate returnDate, int w, in
 
 
 
+
+
+
 //4
 
 public LocalDate departureDate;
@@ -292,7 +303,44 @@ public LocalDate departureDate;
 
 
 
+//5
 
+//  private double DepartingTicketPrice;
+//  private double ReturnTicketPrice;
+
+//  public void setTotalPassengers(int totalPassengers, int TotalPassengers) 
+//  {
+//   this.TotalPassengers = ChildPassengers + AdultPassengers;
+//  }
+
+//  public void setTotalTicketPrice() 
+//  {
+//   this.TotalTicketPrice = Math.abs((((2 * ((300 + (0.1 * 300)) + (0.05 * 300))) + (5 * ((300 + (0.1 * 300)) + (0.05 * 300)))) + 250) * 2);
+//  }
+//  int departingTicketPrice;int returnTicketPrice;
+//  public void setDepartingTicketPrice(int child, int adult) 
+//  {
+//   this.DepartingTicketPrice = departingTicketPrice;
+//  }
+//  public void setReturnTicketPrice() 
+//  {
+//   this.ReturnTicketPrice = returnTicketPrice;
+//  }
+
+
+
+//  public double getDepartingTicketPrice() {
+//     return DepartingTicketPrice;
+// }
+
+// public double getReturnTicketPrice() {
+//     return ReturnTicketPrice;
+// }
+
+// public double getTotalTicketPrice() {
+//     this.TotalTicketPrice = DepartingTicketPrice + ReturnTicketPrice;
+//     return TotalTicketPrice;
+// }
 
 
 
@@ -377,7 +425,7 @@ public String getTicketNumber(){
 
 
 
-private ConfirmationMessage ConfirmationMessage;
+private ConfirmationMessage confirmationMessage;
 public enum ConfirmationMessage{
   CHANGE,NOTCHANGE;
 }
@@ -385,7 +433,7 @@ public enum ConfirmationMessage{
 public void setConfirmationMessage(String confirmationMessage) {
   switch (confirmationMessage) {
       case "1":
-          this.ConfirmationMessage = ConfirmationMessage.CHANGE;
+          this.confirmationMessage = ConfirmationMessage.CHANGE;
           System.out.println("Thank you for booking your flight with " + FlightCompany + ". Following are the details \n" +
                   "of your booking and the trip: \n" +
                   "Ticket Number: " + ticketNumber + "\n" +
@@ -400,7 +448,7 @@ public void setConfirmationMessage(String confirmationMessage) {
                   "less than two days apart from your departure date");
           break;
       case "2":
-          this.ConfirmationMessage = ConfirmationMessage.NOTCHANGE;
+          this.confirmationMessage = ConfirmationMessage.NOTCHANGE;
           System.out.println("Thank you for booking your flight with " + FlightCompany + ".Following are the details \n" +
                   "of your booking and the trip: \n" +
                   "Ticket Number: " + ticketNumber + "\n" +
@@ -416,6 +464,15 @@ public void setConfirmationMessage(String confirmationMessage) {
 
 
 }
+
+// public void getConfirmationMessage(){
+//     return confirmationMessage;
+//   }
+
+
+
+
+
 
 
 public void setTotalTicketPrice() {

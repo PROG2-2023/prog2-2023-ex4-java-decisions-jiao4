@@ -10,22 +10,13 @@ import java.util.Random;
   {
    private String PassengerFullName;
    private String FlightCompany;
-//    private LocalDate DepartingDate;
-//    private LocalDate ReturnDate;
    private double TotalTicketPrice;
    private int ChildPassengers;
    private int AdultPassengers;
    private int TotalPassengers;
-   
-
-   
-  // private TripSource tripSource;
    public TripDestination tripDestination;
-
-//    public SourceAirport SourceAirport;
-//    public DestinationAirport DestinationAirport;
-
    private  BookingClass bookingClass;
+   
    enum BookingClass
    {
    FIRST,BUSINESS,ECONOMY;
@@ -37,15 +28,11 @@ import java.util.Random;
     ONE_WAY, RETURN;
    }
 
-
-
-
-
-
    enum TripSource 
    {
     NANJING, BEIJING, SHANGHAI, OULU, HELSINKI,PARIS;
    }
+   
    enum Airport{
     NANJING_LUKOU_INTERNATIONAL_AIRPORT, BEIJING_CAPITAL_INTERNATIONAL_AIRPORT,
     SHANGHAI_PUDON_INTERNATIONAL_AIRPORT, OULU_AIRPORT,HELSINKI_AIRPORT,
@@ -57,10 +44,6 @@ import java.util.Random;
     NANJING, BEIJING, SHANGHAI, OULU, HELSINKI,PARIS;
    }
 
-
-
-
-  
    public String getPassengerFullName()
    {return PassengerFullName;
    }
@@ -93,8 +76,6 @@ import java.util.Random;
 //     setTotalPassengers(childPassengers,adultPassengers);
 //     }
 
-
-
 public FlightBooking(String a, LocalDate depart, LocalDate returnDate, int w, int e) 
    {
    this.PassengerFullName = a;
@@ -103,8 +84,6 @@ public FlightBooking(String a, LocalDate depart, LocalDate returnDate, int w, in
    this.ChildPassengers =w;
    this.AdultPassengers =e;
    } 
-
-
 
 
    //1
@@ -243,22 +222,6 @@ public FlightBooking(String a, LocalDate depart, LocalDate returnDate, int w, in
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //4
 
 public LocalDate departureDate;
@@ -294,13 +257,6 @@ public LocalDate departureDate;
  {
  return returnDate;
  }
-
-
-
-
-
-
-
 
 
 //5
@@ -341,9 +297,6 @@ public LocalDate departureDate;
 //     this.TotalTicketPrice = DepartingTicketPrice + ReturnTicketPrice;
 //     return TotalTicketPrice;
 // }
-
-
-
 
 
 
@@ -420,11 +373,6 @@ public String getTicketNumber(){
 }
 
 
-
-
-
-
-
 private ConfirmationMessage confirmationMessage;
 public enum ConfirmationMessage{
   CHANGE,NOTCHANGE;
@@ -464,15 +412,6 @@ public void setConfirmationMessage(String confirmationMessage) {
 
 
 }
-
-// public void getConfirmationMessage(){
-//     return confirmationMessage;
-//   }
-
-
-
-
-
 
 
 public void setTotalTicketPrice() {

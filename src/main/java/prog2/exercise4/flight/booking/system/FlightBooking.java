@@ -20,13 +20,13 @@ import java.util.Random;
    private int AdultPassengers;
    private int TotalPassengers;
    
-   public FlightBooking(String a, LocalDate depart, LocalDate returnDate, int w, int e) 
+   public FlightBooking(String a, LocalDate depart, LocalDate returnDate, int i, int i1) 
    {
    this.PassengerFullName = a;
    this.DepartingDate = depart;
    this.ReturnDate = returnDate;
-   this.ChildPassengers =w;
-   this.AdultPassengers =e;
+   this.ChildPassengers =i;
+   this.AdultPassengers =i1;
    } 
   
   // public String getTicketNumber()
@@ -510,5 +510,3 @@ public void setConfirmationMessage(String confirmationmessage) {
 
 
   }
-
-

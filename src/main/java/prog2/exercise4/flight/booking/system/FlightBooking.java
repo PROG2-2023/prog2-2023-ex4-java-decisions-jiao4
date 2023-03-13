@@ -403,14 +403,15 @@ public class FlightBooking {
 
     private ConfirmationMessage confirmationMessage;
 
-    enum ConfirmationMessage {
-        CHANGE, SAVE
+    enum ConfirmationMessage 
+    {
+    NEW, OLD
     }
 
     public void setConfirmationMessage(String confirmationmessage) {
         switch (confirmationmessage) {
             case "1":
-                this.confirmationMessage = confirmationMessage.CHANGE;
+                this.confirmationMessage = confirmationMessage.NEW;
                 System.out.println("Thank you for booking your flight with " + FlightCompany + ". Following are the details \n" +
                         "of your booking and the trip: \n" +
                         "Ticket Number: " + TicketNumber + "\n" +
@@ -425,7 +426,7 @@ public class FlightBooking {
                         "less than two days apart from your departure date");
                 break;
             case "2":
-                this.confirmationMessage = confirmationMessage.SAVE;
+                this.confirmationMessage = confirmationMessage.OLD;
                 System.out.println("Thank you for booking your flight with " + FlightCompany + ".Following are the details \n" +
                         "of your booking and the trip: \n" +
                         "Ticket Number: " + TicketNumber + "\n" +

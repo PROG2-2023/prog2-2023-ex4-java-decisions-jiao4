@@ -24,7 +24,7 @@ import java.util.Random;
    {
    this.PassengerFullName = a;
    this.DepartingDate = depart;
-   this.ReturnDate = returnDate;
+   this.returnDate = returnDate;
    this.ChildPassengers =i;
    this.AdultPassengers =i1;
    } 
@@ -93,9 +93,9 @@ import java.util.Random;
   // {this.TripDestination = TripDestination;
   //  }
   
-   public void setDepartingDate(LocalDate DepartingDate)
-   {this.DepartingDate = DepartingDate;
-   }
+  //  public void setDepartingDate(LocalDate DepartingDate)
+  //  {this.DepartingDate = DepartingDate;
+  //  }
   
   //  public void setReturnDate(LocalDate ReturnDate)
   //  {this.ReturnDate = ReturnDate;
@@ -394,11 +394,11 @@ import java.util.Random;
 
  public void setDepartingTicketPrice(int child, int adult) 
  {
-  this.departingTicketPrice = departingTicketPrice;
+  this.departingTicketPrice = DepartingTicketPrice;
  }
  public void setReturnTicketPrice() 
  {
-  this.returnTicketPrice = returnTicketPrice;
+  this.returnTicketPrice = ReturnTicketPrice;
  }
 
 Random random=new Random();

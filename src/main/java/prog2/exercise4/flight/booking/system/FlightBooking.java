@@ -1,7 +1,7 @@
 package prog2.exercise4.flight.booking.system;
 import java.time.LocalDate;
 import java.util.Random;
-import javax.lang.model.util.ElementScanner14;
+
   
   public class FlightBooking 
   {
@@ -472,7 +472,40 @@ public String getTicketNumber(){
   return ticketNumber;
 }
 
+public void setConfirmationMessage(String confirmationmessage) {
+  switch (confirmationmessage) {
+      case "1":
+          this.confirmationmessage = confirmationmessage;
+          System.out.println("Thank you for booking your flight with " + FlightCompany + ". Following are the details \n" +
+                  "of your booking and the trip: \n" +
+                  "Ticket Number: " + ticketNumber + "\n" +
+                  "Passenger Name: " + PassengerFullName + "\n" +
+                  "From TripSource to " + tripDestination + "\n" +
+                  "Date of departure: " + departureDate + "\n" +
+                  "Date of return: ReturnDate (Changed from old ReturnDate to new\n" +
+                  ReturnDate + ")\n" +
+                  "Total passengers: " + TotalPassengers + "\n" +
+                  "Total ticket price in Euros: " + TotalTicketPrice + "\n" +
+                  "IMPORTANT NOTICE: As per our policy, the return date was changed because it was \n" +
+                  "less than two days apart from your departure date");
+          break;
+      case "2":
+          this.ConfirmationMessage = confirmationmessage;
+          System.out.println("Thank you for booking your flight with " + FlightCompany + ".Following are the details \n" +
+                  "of your booking and the trip: \n" +
+                  "Ticket Number: " + ticketNumber + "\n" +
+                  "Passenger Name: " + PassengerFullName + "\n" +
+                  "From TripSource to " + tripDestination + "\n" +
+                  "Date of departure: " + departureDate + "\n" +
+                  "Date of return: " + ReturnDate + "\n" +
+                  "Total passengers: " + TotalPassengers + "\n" +
+                  "Total ticket price in Euros: " + TotalTicketPrice + "\n");
 
+          break;
+  }
+
+
+}
 
 
 
